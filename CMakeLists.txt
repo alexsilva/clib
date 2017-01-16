@@ -36,3 +36,7 @@ target_link_libraries(clib-search curl)
 # copy manifest to output
 file(COPY ${CMAKE_HOME_DIRECTORY}/clib-install.exe.manifest
         DESTINATION ${EXECUTABLE_OUTPUT_PATH})
+
+# copy package.json to output
+file(COPY ${CMAKE_HOME_DIRECTORY}/package.json
+        DESTINATION ${EXECUTABLE_OUTPUT_PATH})
