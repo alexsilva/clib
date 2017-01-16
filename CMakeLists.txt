@@ -40,3 +40,8 @@ file(COPY ${CMAKE_HOME_DIRECTORY}/clib-install.exe.manifest
 # copy package.json to output
 file(COPY ${CMAKE_HOME_DIRECTORY}/package.json
         DESTINATION ${EXECUTABLE_OUTPUT_PATH})
+
+
+# copy clib_install.at to output
+file(COPY ${CMAKE_HOME_DIRECTORY}/clib.bat
+        DESTINATION ${EXECUTABLE_OUTPUT_PATH})
